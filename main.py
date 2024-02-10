@@ -6,3 +6,4 @@ def juftmi(x):
     return x%2==0
 juft_sonlar=list(filter(lambda x: x%2==0,sonlar))
 print(juft_sonlar)
+print(12)
