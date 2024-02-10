@@ -1,0 +1,1212 @@
+print(' "Nexia", "TIco", \'Damas\', ko\'rganlar qilar havas')
+print("5 ning 4-darajasi", 5**4)
+print("22 ni 4 ga bolgandagi qoldiq", 22%4)
+print("tomonlari 125 ga teng kvadrat yuzi", 125**2, "perimetri", 125*4," ga teng")
+print("diametri 12 teng bolgan doiraning yuzasi", 6**2*3.14)
+print("katetlari 6 va 7 bolgan uchburchak gipotenuzasi", (6**2+7**2)**(1/2))
+
+string="hello world"
+print(string)
+xabar="mening ismim Dilshodov Dilmurod"
+print(xabar)
+xabar="men studentman"
+print(xabar)
+
+son1=int(input("Istalgan sonni kirit:\n"))
+print(son1, "ning kvadrati ", son1**2)
+print(son1, "ning kubi ", son1**3) 
+
+yosh= int(input("yoshingiz nechada?\n>>>"))
+print("siz", 2024- yosh, "yilda tugilgansz")
+
+son1=int(input("birinchi sonni kiriting:\n"))
+son2=int(input("Ikkinchi sonni kiriting:\n"))
+print(son1, "+" ,son2, "= " ,son1+son2)
+print(son1, "-", son2, "= ", son1-son2)
+print(son1, "*" ,son2, "= ", son1*son2)
+print(son1, "/", son2, "= " ,son1/son2)
+
+names=['Ilhom', 'Nosir', 'Elyor']
+print("salom ",names[0], "BUGUn darsga kelasanmi?")
+print("salom ", names[1], " opshitada turadi")
+print(names[2], " oqishga kecha kelmadi")
+
+
+numbers=[1, 3, 2.4, -23, -4.3]
+print(numbers[0], "+", numbers[1], "=", numbers[0]+numbers[1])
+print(numbers[4], "/", numbers[2], "=" , numbers[4]/numbers[2])
+numbers.append(3)
+numbers.insert(2, 23)
+del numbers[4]
+numbers.remove(-4.3)
+son=numbers.pop(0)
+print(numbers)
+print(son)
+
+t_shaxslar=['Amir Temur', 'Alisher navoiy', 'Al-Xorazmiy']
+z_shaxslar= ['stib jobs', 'Dilshodov Dilmurod', 'Jabborov Ilhom']
+tshaxs=t_shaxslar.pop(1)
+zshaxs=z_shaxslar.pop(2)
+print("Men ", tshaxs, " gazallarini kop oqiganman")
+print("men kursdoshim", zshaxs, "opshitada turadi")
+
+
+friends=[]
+friends.append("akbar")
+friends.append("odamboy")
+friends.append("bobur")
+friends.append("aziz")
+friends.append("javohir")
+print(friends)
+friends.remove("odamboy")
+friends.remove("akbar")
+print(friends)
+friends.insert(0, "abbos")
+friends.insert(-1, "Farrux")
+friends.insert(2, "osiyo")
+print(friends)
+mehmonlar=[]
+mehmonlar.append(friends.pop(0))
+mehmonlar.append(friends.pop(-1))
+mehmonlar.append(friends.pop(3))
+print(mehmonlar)
+
+
+price=[1200, 1000, 102000, 41000, 4700]
+summa=sum(price)
+print(summa)
+price.append(1209)
+narx=price[:]
+narx.append(2130)
+print(narx)
+son=narx[2:5]
+print(son)
+
+
+country=['turkey', 'amerika', 'germaniya', 'eron', 'suriya', 'arab', 'azarbayjon']
+print(len(country))
+print(sorted(country))
+print(sorted(country, reverse=True))
+print(country)
+country.reverse()
+print(country)
+country.sort()
+print(country)
+country.sort(reverse=True)
+print(country)
+
+numbers=list(range(120, 1200,2))
+print(numbers)
+print(sum(numbers))
+print(max(numbers)- min(numbers))
+print(len(numbers))
+sonlar=numbers[0:20]
+print(sonlar)
+sonlar1=numbers[260:280]
+print(sonlar1)
+sonlar2=numbers[-20:-1]
+print(sonlar2)
+
+taomlar=['osh', 'chuchvara', 'xonim', 'norin', 'baliq']
+nonushta=taomlar[:]
+nonushta.remove('osh')
+del nonushta[1]
+nonushta.append('asal')
+nonushta.insert(1, "sari yog'")
+print(nonushta, "\n")
+print(taomlar)
+nonushta=tuple(nonushta)
+
+
+sonlar=list(range(1,11))
+kvadrati=[]
+for son in sonlar:
+   kvadrati.append(son**2)
+print(sonlar, "\n")
+print(kvadrati)
+
+dostlar=[]
+print("5 ta eng yaqin dostingizni ismini kiriting")
+for n in range(0,5):
+    dostlar.append(input( f"{n+1} chi dostingizni ismini kiriting\n>>>"))
+print(dostlar)
+names= ['Asad', 'Temur', 'Ilhom', 'afzal', 'tommy', 'jerry']
+for name in names:
+    print(f"Assalomu aleykum {name.title()} dasturimizga hush kelibsiz")
+print(f"kod {len(names)} marta takrorlandi")
+
+sonlar=list(range(10, 100))
+for son in sonlar:
+    print(f"{son}  ning kubi {son**3} ga teng")
+
+kinolar=[]
+print("5 ta sevimli kinolaringizni kiriting:")
+for kino in range(0,5):
+    kinolar.append(input(f"{kino +1} chi kinoni kiriitng\n>>>"))
+print(kinolar)
+
+cars=['mers', 'cobalt', 'nexia', 'bmw', 'taheo']
+for car in cars:
+    if car == 'cobalt':
+        print(car.upper())
+    else:
+        print(car.title())
+
+ism=input("Ismingizni kiriitng:\n>>>")
+if ism.lower() != 'dilmurod':
+    print(f"{ism.title()} uzrli ")
+else:
+    print(f"{ism.title()}  salom")
+
+javob=float(input("32*4 nechiga teng?\n>>>"))
+if javob !=128:
+    print("javobingiz xato")
+else:
+    print("togri")
+
+
+
+yil=int(input("Tugilgan yilingizni kiriting\n>>>"))
+if 2024-yil<18:
+    print(f"Yoshingiz {2024-yil} ekan")
+    print("xush kelibsiz")
+else:
+    print("xush kelibsiz")
+
+cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia']
+for car in cars:
+    if car.lower() != 'gm':
+        print(car.title()) 
+    else:
+        print('GM')
+
+login= input("Ismingizni kiriting\n>>>")
+if login.lower() == 'admin':
+    print("Xush kelibsiz, Admin. Foydalanuvchilar royxatini korasizmi")
+else:
+    print(f"xush kelibsiz {login.title()} !")
+
+
+son1=int(input("Birinchi sonni kiriitng\n>>>"))
+
+if son1>0:
+    print("musbat son")
+else:
+    print("MAnfiy son")
+
+
+son1=int(input("Birinchi sonni kiriitng\n>>>"))
+
+if son1>0:
+    print(son1**0.5)
+else:
+    print("MAnfiy son, musbat son kiriitng")    
+
+
+yosh=int(input("yoshingizni kiriitng\n>>>"))
+if yosh<=4:
+    print("Sizga chipta tekin")
+elif yosh <=12:
+    print("kirish chipta puli 4000")
+else:
+    print("Kirish chipta puli 10_000")
+
+    yosh=int(input("YOshingiz nechada?\n>>>"))
+if yosh<=4:
+    price=0
+elif yosh <=12:
+    price=4_000
+elif yosh >=65:
+    price=0
+else:
+    price=10000
+print(f"Sizga kirish {price} so'm")
+
+day=input("Bugun qaysi kun?\n>>>")
+harorat=float(input("havo harorati qanday?\n>>>"))
+if (day.lower()== 'shanba' or day.lower() == 'yakshanba') and harorat>=30:
+    print("Chomilishga ketdik")
+elif (day.lower()== 'shanba' or day.lower() == 'yakshanba') and harorat<=30:
+   print("uyda dam olamiz")
+elif( day.lower() != 'shanba' or day.lower() != "yakshanba") and harorat>=30:
+    print("ish vaxtingiz zavqli o'tsin")
+elif( day.lower() != 'shanba' or day.lower() != "yakshanba") and harorat<=30:
+    print("ozingizni ehtiyot qiling havo salqin, ishga omad")
+
+
+narx=15000
+choy= True
+salat = 1
+
+if choy and salat:
+    narx= narx+10000
+elif choy or salat:
+    narx=narx+5000
+print(narx)
+
+narx=15000
+salat=True
+non = False
+kompot = True
+asarti= False
+choy = True
+
+if salat:
+    print("mijoz salat oldi")
+    narx=narx+5000
+if non:
+    print("mijoz non oldi")
+    narx=narx+3000
+if kompot:
+    print("mijoz kompot oldi")
+    narx=narx+6000
+if asarti:
+    print("Mijoz asasrti oldi")
+    narx=narx+10000
+if choy:
+    print("Mijoz choy oldi")
+    narx=narx+3000
+    
+print(f"Jami summa {narx} bo'ldi")
+
+
+menu= ['osh', 'manti', 'norin', 'chuchvara', 'shabob', 'qazonkabob']
+buyurtma = ['osh', 'shorva', 'xonim', 'qorin', 'shabob']
+if buyurtma:
+ for taom in buyurtma:
+    if taom in menu:
+        print (f"Menuda {taom} bor")
+    else:
+        print(f"Kechirasiz, menuda {taom} yoq")
+else:
+    print("SAvatchangiz bo'sh!")
+
+son=int(input("Juft son kiriitng:\n>>>"))
+if son%2==0:
+    print ("Rahmat")
+else:
+    print("Bu juft son emas!")
+
+yosh =int(input("Yoshingizni kiriitng\n>>>"))
+if yosh<=4 or yosh>=60:
+    price=0
+elif yosh<=18:
+    price=10000
+elif yosh>18:
+    price=20000
+print(f"Siz uchun chipta narxi {price} so'm")
+
+
+son1=float(input("Birinchi sonni kiriting\n>>>"))
+son2=float(input("Ikkinchi sonni kiriitng\n>>>"))
+if son1== son2:
+    print("Birinchi son ikkinchisiga teng")
+elif son1>son2:
+    print("Birinchi son Ikkinchidan katta")
+else:
+    print("Ikkinchi son birinchisidan katta")
+
+mahsulot=['olma', 'gugurt', 'orik', 'sabzi', 'yog', 'makaron', 'norin', 'suv']
+savat=[]
+for n in range(0,4):
+    savat.append(input(f"{n+1} chi elementni kiriting:"))
+for narsa in savat:
+    if narsa in mahsulot:
+        print(f"{narsa} dokonimizda bor")
+    else:
+        print(f"{narsa} dokonda yoq")
+
+        mahsulot=['olma', 'gugurt', 'orik', 'sabzi', 'yog', 'makaron', 'norin', 'suv']
+savat=[]
+bor_mahsulotlar=[]
+mavjud_emas=[]
+for n in range(0,4):
+    savat.append(input(f"{n+1} chi elementni kiriting:"))
+for narsa in savat:
+    if narsa in mahsulot:
+        bor_mahsulotlar.append(narsa)
+    else:
+        mavjud_emas.append(narsa)
+if mavjud_emas:
+    print("Dokonimizda quyidagi mahsulotlar yoq")
+    for narsa in mavjud_emas:
+        print(narsa)
+else:
+    print("Dokonimizda siz aytgan hamma mahsulot bor")
+
+
+users=['dilmurod', 'daston', 'nosir', 'aziz', 'suhrob']
+login=input("Login kiriting:\n>>>")
+if login.lower() in users:
+    print("login band, boshqa login tanlashingiz mumkin")
+else:
+    print("Xush kelibsiz, foydalanuvchi")
+
+son1=int(input("istalgan son kiriitng\n>>>"))
+for n in range(2,11):
+    if not (son1%n):
+        print(f"{son1} soni {n} ga qoldiqsiz bolinadi")
+
+talaba_0={'ism':'Dilmurod Dilshodov', 'yoshi': '21', 't_yili': '2003', 'kursi':'3'}
+print(f"{talaba_0['ism'].title()}  {talaba_0['t_yili']}-yilda tugilgan , {talaba_0['yoshi']} yoshda , {talaba_0['kursi']} chi kurs")
+
+telefonlar = {
+    'ali':'iphone x',
+    'vali':'galaxy s9',
+    'olim':'mi 10 pro',
+    'orif':'nokia 3310'
+    }
+phone= telefonlar.get('orif','Bunday ism mavjud emas')
+print(f"Orifning telefoni {phone}")
+
+
+python={
+    'integer':'butun son',
+    'float': 'onlik son',
+    'string': 'matn',
+    'if': 'agar',
+    'else': 'aks holda',
+    'elif': ' agarda',
+    'title': 'bosh harf',
+    'lower': 'kichik harf'
+}
+word=input("python da doir atamani kiriitng:\n>>>")
+words=python.get(f"{word}", 'Bunday soz mavjud emas')
+print(words)
+
+python={
+    'integer':'butun son',
+    'float': 'onlik son',
+    'string': 'matn',
+    'if': 'agar',
+    'else': 'aks holda',
+    'elif': ' agarda',
+    'title': 'bosh harf',
+    'lower': 'kichik harf'
+}
+kalit=input("kalit soz kiriitng\n>>>")
+tarjima=python.get(kalit)
+if tarjima == None:
+    print("Bunday soz mavjud emas")
+else:
+    print(f"{kalit.title()} tarjimasi {tarjima.title()} deb tarjima qilinadi")
+
+telefonlar = {
+    'ali':'iphone x',
+    'vali':'galaxy s9',
+    'olim':'mi 10 pro',
+    'orif':'nokia 3310'
+    }
+
+for kalit, qiymat in telefonlar.items():
+   print(f"{kalit.title()} ning telefoni {qiymat} akan")
+
+
+# print(mahsulotlar.keys())
+# print("Do'kondagi mahsulotlar:")
+# for mahsulot in mahsulotlar:
+#     print(mahsulot.title())
+
+
+bozorlik = ['anor','uzum','non','baliq']
+for mahsulot in mahsulotlar:
+    if mahsulot in bozorlik:
+        print(f"{mahsulot.title()} {mahsulotlar[mahsulot]} som")
+
+mahsulotlar = { 
+    'olma':10_000,
+    'anor':20_000,
+    'uzum':40_000,
+    'anjir':25_000,
+    'shaftoli':30_000,
+    'orik': 30_000,
+    'behi': 40_000
+    }
+
+
+for mahsulot in set(mahsulotlar.values()):
+    print(mahsulot)
+    
+
+
+dictionary={
+    'set':'takrorlikni oldini oladi',
+    'if': 'shart',
+    'elif': 'aks holda',
+    'value':'qiymat',
+    'keys':'kalit',
+    'item':'lugat uchun',
+    'method':'lugatga doir'
+}
+for kalit, qiymat in sorted(dictionary.items()):
+    print(f"{kalit.title()} python da tarjimasi {qiymat.title()} degan manoni beradi")
+
+
+country={
+    'uzb':'toshkent',
+    'rus':'moskva',
+    'suriya':'damashq',
+    'hindiston':'Dehli',
+    'afgoniston':'qobul'
+}
+for kalit, qiymat in sorted(country.items()):
+    print(f"Davlat nomi: {kalit}\t")
+    print(f"Poytaxti nomi: {qiymat}")       
+
+menu ={
+    'cola': 4_000,
+    'choy':3_000,
+    'fanta':4_000,
+    'manti':12_000,
+    'shorva':13_000,
+    'osh':15_000,
+    'kabob': 20_000
+}
+buyurtma=[]
+print("3 ta ovqat buyurtma berishingiz mumkin:")
+for n in range(0,3):
+    buyurtma.append(input(f"{n+1}-buyurtmani kiriitng:>>>"))
+for mahsulot in buyurtma:
+    if mahsulot in menu:
+        print(f"{mahsulot.title()} {menu[mahsulot]} so'm")
+    else:
+        print(f"kechirasiz, bizda {mahsulot.title()} majud emas")
+
+
+car0 = {
+        'model':'lacetti',
+        'rang':'oq',
+        'yil':2018,
+        'narh':13000,
+        'km':50000,
+        'korobka':'avtomat'
+        }
+
+car1 = {
+        'model':'nexia 3',
+        'rang':'qora',
+        'yil':2015,
+        'narh':9000,
+        'km':89000,
+        'korobka':'mexanika'
+        }
+
+car2 = {
+        'model':'gentra',
+        'rang':'qizil',
+        'yil':2019,
+        'narh':15000,
+        'km':20000,
+        'korobka':'mexanika'
+        }
+cars=[car0, car1, car2]
+
+print(f"{cars[2]['rang'].title()} {cars[2]['model']}")
+
+malibus=[]
+for n in range(10):
+    new_car={
+        'model':'malibu',
+        'yili':'2024',
+        'rang':None,
+        'km':0,
+        'korobka':'avto'
+    }
+    malibus.append(new_car)
+for malibu in malibus[:3]:
+    malibu['rang']='qizil'
+for malibu in malibus[3:10]:
+    malibu['rang']='qora'
+for malibu in malibus[6:10]:
+    malibu['korobka']='mexanik'
+for malibu in malibus:
+    if malibu['korobka']=='avto':
+        malibu['narx']=40_000
+    else:
+        malibu['narx']=35_000    
+for malibu in malibus:
+    print(malibu)
+
+
+dasturchilar={
+    'Aziz':['php', 'python', 'c++' ],
+    'Odamboy':['c#', 'c++', 'html'],
+    'Ruslan':['java', 'c++', 'python']
+}
+for ism, tillar in dasturchilar.items():
+    print(f"{ism.title()} quyidagi dasturlash tillarini biladi")
+    for til in tillar:
+        print(til.upper())
+   
+
+
+dasturchilar={
+    'ali':{'familiya':'jabborov',
+           'ttyil':1998,
+           'malumot':'oliy',
+           'tillar':['js','java', 'html']
+           },
+     'aziz':{'familiya':'sapayev',
+           'ttyil':2003,
+           'malumot':'oliy',
+           'tillar':['js','java', 'php', 'css']
+           },
+      'rus':{'familiya':'ahmedov',
+           'ttyil':2008,
+           'malumot':'oliy-orta',
+           'tillar':['js','java', 'html', 'universal']
+           },
+       'hasan':{'familiya':'Tojiyev',
+           'ttyil':1998,
+           'malumot':'oliy',
+           'tillar':['js','java', 'html', 'cisco']
+           },
+}
+    
+for ism, info in dasturchilar.items():
+    print(f"\n{ism.title()}  {info['familiya'].title()} {info['ttyil']}-yilda tugilgan,\nmalumoti {info['malumot'].title()}")
+    print("Quyidagi dasturlash tillarini biladi:")
+    for til in info['tillar']:
+        print(f'{til.upper()} ')
+
+
+
+car0 = {
+        'model':'lacetti',
+        'rang':'oq',
+        'yil':2018,
+        'narh':13000,
+        'km':50000,
+        'korobka':'avtomat'
+        }
+
+car1 = {
+        'model':'nexia 3',
+        'rang':'qora',
+        'yil':2015,
+        'narh':9000,
+        'km':89000,
+        'korobka':'mexanika'
+        }
+
+car2 = {
+        'model':'gentra',
+        'rang':'qizil',
+        'yil':2019,
+        'narh':15000,
+        'km':20000,
+        'korobka':'mexanika'
+        }
+cars=[car0, car1, car2]
+for car in cars:
+    print(f"\n{car['model'].title()} {car['rang']} rangda, {car['yil']}-yil, {car['km']} yurgan, {car['korobka']}", end='')
+
+
+hamkasblar = {
+    'ali':{'familiya':'valiyev',
+           'tyil':1995,
+           'malumot':'oliy',
+           'tillar':['python','c++']
+           },
+    'vali':{'familiya':'aliyev',
+            'tyil':2001,
+            'malumot':"o'rta-maxsus",
+            'tillar':['html', 'css', 'js']},
+    'hasan':{'familiya':'husanov',
+             'tyil':1999,
+             'malumot':'maxsus',
+             'tillar':['python','php']}
+    }
+
+for ism, info in hamkasblar.items():
+    print(f"{ism.title()} quyidagi dasturlash tillarini biladi:")
+    for til in info['tillar']:
+        print(f"{til.upper()}")
+
+adabiyot={
+    'ruslan':{'ism':'Ahmedov Ruslan',
+              'tillar':['java', 'c++', 'py', 'php'],
+              'y_joyi':'xonqa'
+              },
+    'temur':{'ism':'erkinov temur',
+             'tillar':['java', 'c#', 'go', 'js'],
+             'y_joyi':'yangiariq'
+             },
+    
+}
+for ism, info in adabiyot.items():
+    print(f"{ism.title()} {info['y_joyi']} da tugilgan,quyidagi dasturlash tillarini biladi:")
+    for til in info['tillar']:
+        print(f"{til.upper()}")
+  
+  
+
+son=1
+while son<=5:
+    print(son, end=' ')
+    son+=1
+
+print("kiritilgan sonni kvadratini hisoblash:")
+savol="Istalgan sonni kiriting (dasturni toxtatish uchun 'exit' deb yozing):"
+qiymat=''
+while qiymat !='exit':
+    qiymat=input(savol)
+    if qiymat != 'exit':
+        print (f"{float(qiymat)**2}")
+    elif qiymat == 'exit':
+        print("dastur tugadi")
+
+ism=input("ismingiz nima?")
+yosh=int(input(f"Salom {ism.title()}. Yoshingiz nechida?"))
+height=float(input("Boyingiz necha metr?"))
+print(f"{ism.title()} sizning yoshingiz: {yosh}, boyingiz {height/100} metr")
+
+
+print("kiritilgan sonni kvadratini qaytarish:")
+savol="son kiriting(tugatish uchun 'exit' yozing):"
+ishora=True
+while ishora:
+    qiymat=input(savol)
+    if qiymat== 'exit':
+        ishora=False
+    else:
+        print(float(qiymat)**2)
+
+print("kiritilgan sonni kvadratini qaytarish:")
+savol="son kiriting(tugatish uchun 'exit' yozing):"
+while True:
+    qiymat=input(savol)
+    if qiymat == 'exit':
+        break
+    else:
+        print(float(qiymat)**2)
+
+
+sonlar=list(range(10))
+for son in sonlar:
+    if son==8:
+        break
+    print(f"{son} ning kvadrati {son**2} ga teng")
+
+
+son=0
+while son>0:
+    son+=1
+    if son%2!=0:
+        continue
+    else:
+        print(son)
+
+ism=input("Ismingiz nima?\n>>>")
+yosh=int(input(f"Salom {ism.upper()}, yoshingiz nechida?>>>"))
+height=float(input("boyingiz necha metr?>>>"))
+
+
+print("kiritilgan sonning kvadratini qaytaruvchi dastur:")
+qiymat=''
+while qiymat !='exit':
+    qiymat=input("Istalgan son kiriting(koddi tohtatish uchun 'exit' yozing):")
+    if qiymat !='exit':
+        print(float(qiymat)**2)
+
+print("kiritilgan sonning kvadratini qaytaruvchi dastur:")
+ishora=True
+
+while ishora:
+    qiymat=input("Istalgan sonni kiriting('exit' for stop):")
+    if int(qiymat)<=0:
+        ishora=False
+    else:
+        print(float(qiymat)**0.5)
+
+
+sonlar=list(range(1,11))
+for son in sonlar:
+    if son==5:
+        continue
+    else:
+        print(f"{son} ning kvadrati {son**2} ga teng")
+
+son=0
+while son<10:
+    son+=1
+    if son % 2 != 0:
+        continue
+    else:
+        print(f"{son} ning kvadrati {son**2}")
+ ## vazifa :
+
+print('Sevimli kitoblaringizni kiriting.')
+savol="sevimli kitobingni kiriting(dastur tugashi uchun 'stop' yozing)"
+qiymat=''
+while qiymat!='stop':
+    qiymat=input(savol)
+    if qiymat=='stop':
+        print("Dastur tugadi")
+print("Rahmat")
+
+
+print("sevimli kitoblarni kiritish.")
+
+qiymat=''
+while qiymat != 'stop':
+    qiymat=input("sevimli kitobingizni yozing(dasturni tohtatish uchun 'stop' deb yozing)\n>>>")
+    if qiymat== 'stop':
+        break
+    else:
+        print(qiymat.title())
+print("Rahmat")
+
+
+print("Muzey uchun chipta narxini hisoblash.")
+qiymat=''
+while qiymat != 'exit' or qiymat !='quit':
+    qiymat=input("Yoshingizni kiriting:\n>>>")
+    if qiymat == 'exit' or qiymat == 'quit':
+        break
+    yosh=int(qiymat)
+    if yosh<7:
+        narx=2000
+    elif 7<=yosh<18:
+        narx=3000
+    elif 18<=yosh<65:
+        narx=5000
+    else:
+        narx=0
+    print(f"Sizning yoshingiz {yosh} bolgani uchun chipta narxi {narx} so'm")
+print("hush kelibsiz")
+
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if qiymat=='exit':
+        break
+    elif int(qiymat)<0:
+        continue
+    else:
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+print("Yaqin dostlaringiz royxatini tuzamiz.")
+ismlar=[]
+n=1
+while True:
+    savol=f"{n}-dostingizni ismini kiriting:"
+    ism=input(savol)
+    ismlar.append(ism)
+    javob=input("yana ism qoshasizmi?(ha/yoq)")
+    if javob == 'ha':
+        n+=1
+        continue
+    else:
+        break
+
+
+print("Dostlaringizni yoshini saqlaymiz.")
+dostlar={}
+ishora=True
+while ishora:
+    ism=input("Dostingizni ismini kiriting:")
+    yosh=input(f"{ism.title()} ning yoshini kiriting:")
+    dostlar[ism]=int(yosh)
+    javob=input("Yana malumot qoshasizmi?(ha/yoq)")
+    
+    if javob =="yoq":
+        ishora=False
+    
+for ism, yosh in dostlar.items():
+    print(f"{ism.title()} ning yoshi {yosh} da")
+
+
+cars=['spark', 'cobalt', 'spark', 'gentra', 'spark']
+while 'spark' in cars:
+    cars.remove('spark')
+print(cars)
+
+baholangan_talabalar={}
+while talabalar:
+    talaba=talabalar.pop()
+    baho=input(f"{talaba.title()} bahosini kiriting:")
+    print(f"{talaba.title()} baholandi")
+    baholangan_talabalar[talaba]=baho
+
+savat=[]
+print("Mahsulotlarni savatga qoshing:")
+ishora=True
+while ishora:
+    mahsulot=input("Savatga mahsulot kiriting:\n>>>")
+    savat.append(mahsulot)
+    javob=input("Yana mahsulot qoshasizmi?(ha/yoq)")
+    if javob == 'yoq':
+        break
+    elif javob == 'ha':
+        continue
+print(savat)
+
+print("Masulotlar ro'yxatini yaratamiz.")
+mahsulotlar={}
+while True:
+    mahsulot=input("mahsulot nomini kiriting>>>")
+    baho=input(f"{mahsulot} narxini kiriting>>>")
+    mahsulotlar[mahsulot]=baho
+    javob = input("yana mahsulot qoshasizmi?(ha/yoq)")
+    if javob == 'yoq':
+        break
+    elif javob == 'ha':
+        continue
+buyurtmalar=[]
+print("Buyurtmalarni aniqlash:")
+while True:
+    buyurtma=input("buyurtmani kiriting:>>>")
+    buyurtmalar.append(buyurtma)
+    javob=input("Yana buyurtma bormi?(ha/yoq)")
+    if javob == 'yoq':
+        break
+while buyurtmalar:
+    buyurtma= buyurtmalar.pop()
+    if buyurtma in mahsulotlar.keys():
+        narx=mahsulotlar[buyurtma]
+        print(f"{buyurtma} {narx} som")
+    else:
+        print(f"{buyurtma} bizda yoq")
+    
+
+def toliq_ism(ism, familiya):
+"""Foydalanuvchi ism va familiyasini jamlab chiqaruvchi funksiya"""
+    print(f"Foydalanuvchi ismi: {ism.title()}\n"
+          f"Foydalanuvchi familiyasi: {familiya.title()}")
+toliq_ism('dilmurod', 'dilshodov')
+
+def yosh_hisobla(ism, tugilgan_yil):
+    """foydalanuvchi yoshini hisoblovchi dastur"""
+    print(f"{ism.title()} {2024-tugilgan_yil} yoshda")
+yosh_hisobla(tugilgan_yil=2003, ism='dilmurod')
+
+def yosh_hisobla(ism, tugilgan_yil=2003):
+    """foydalanuvchi yoshini hisoblovchi dastur"""
+    print(f"{ism.title()} {2024-tugilgan_yil} yoshda")
+yosh_hisobla(tugilgan_yil=2000, ism='dilmurod')
+
+
+def yosh_hisobla(tugilgan_yil, joriy_yil=2024):
+    """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+    
+tyil = int(input("Tug'ilgan yilingizni kiriting: "))
+yosh_hisobla(tyil)
+
+
+def t_yil(ism, yosh):
+    """Foydalanuvchi tugilgan yilini hisoblovchi dastur"""
+    print(f"{ism.title()} {2024-yosh} yilda tugilgan")
+ism=input("Ismingizni kiriting:")
+yosh=int(input("yoshingizni kiriting:"))
+t_yil(ism, yosh)
+
+
+def hisobla(son):
+    """sonning kvadrati hamda kubini hisoblovchi dastur"""
+    print(f"{son} ning kvadrati {son**2}, kubi {son**3} ga teng")
+    
+son=int(input("Ixtiyoriy son kiriting:"))   
+hisobla(son) 
+
+
+def tekshirish(son):
+    """Sonni toqlikka tekshirish"""
+    if son%2==0:
+        print(f"{son} bu juft son")
+    else:
+        print(f"{son} bu toq son")
+
+son=int(input("Ixtiyoriy son kiriting:"))
+
+tekshirish(son)
+
+def hisobla_katta(son1, son2):
+    """Sonning kattasini aniqlash"""
+    if son1>son2:
+        print(f"{son1} {son2} dan katta")
+    elif son2>son1:
+        print(f"{son2} {son1} dan katta")
+    else:
+        print("Sonlar bir-biriga teng")
+son1=int(input("Birinchi sonni kiriting:"))
+son2=int(input("Ikkinchi sonni kiriting:"))
+hisobla_katta(son1=son1, son2=son2)
+
+def toliq_ism_yasa(ism, familiya):
+    """Toliq ism familiya"""
+    toliq_ism=f"{ism.title()} {familiya.title()}"
+    return toliq_ism
+student=toliq_ism_yasa('odamboy', 'ochilov')
+student1=toliq_ism_yasa('ruslan', 'ahmedov')
+print(f"Darsga kelmagan talabalar {student} va {student1}") 
+
+
+def toliq_ism_yasa(ism, familiya, otasini_ismi=' '):
+    """Toliq ism ishlab chiqaruvchi dastur"""
+    if otasini_ismi:
+        toliq_ism=f"{ism} {otasini_ismi} {familiya}"
+    else:
+        toliq_ism=f"{ism} {familiya}"
+    return toliq_ism.title()
+student=toliq_ism_yasa('dilmurod', 'dilshodov')
+student1=toliq_ism_yasa('isroil', 'inomjon ogli', 'shuhratov')
+print(f"Uyda qolgan bolalar {student} va {student1}")
+
+
+def avto_info(kompaniya, model, rang, yili, narx= None):
+    avto = {'kompaniya':kompaniya,
+            'model':model,
+            'rang':rang,
+            'yili':yili,
+            'narx':narx}
+    return avto
+avto1 = avto_info('GM', 'COBALAT', 'qora', '2021', 14500)
+avto2 = avto_info('kia', 'elantra', 'kok', '2021', )
+avtolar = [avto1, avto2]
+print("Sotuvda bor mashinalar:")
+for avto in avtolar:
+    if avto['narx']:
+        narx=avto['narx']
+    else:
+        narx="Nomalum"
+    print(f"{avto['rang']} {avto['model'].title()} narxi: {narx}")
+
+
+def oraliq (min, max):
+    sonlar=[]
+    while min<max:
+        sonlar.append(min)
+        min+=1
+    return sonlar
+print(oraliq(0, 21))
+
+def avto_info(kompaniya, model, rangi, yili, narhi=None):
+    avto = {'kompaniya':kompaniya,
+            'model':model,
+            'rang':rangi,
+            'yil':yili,
+            'narh':narhi}
+    return avto
+
+print("Saytimizda mavjud avtomobillar:")
+avtolar=[]
+while True:
+    print("\n Quyida avtomobil malumotlariini kiritamiz:")
+    kompaniya=input("kompaniya nomi>>>")
+    model=input("MOdel nomi>>>")
+    rangi = input("avtomobil rangi>>>")
+    yili = input("Ishlab chiqarilgan yili>>>")
+    narxi = input("avtomobil narxi>>>")
+    avtolar.append(avto_info(kompaniya, model, rangi, yili, narxi))
+    javob=input("Yana avtomobil qoshasizmi?(yes/no)")
+    if javob == 'no':
+        break
+    else:
+        continue
+print(avtolar)
+
+def mijoz_info(ism, familiya, t_yil, t_joyi, email='', tel=None):
+    """MIjoz haqidagi malumotlartni lugat korinishida qaytaruvchi funksiya"""
+    mijoz={'ism':ism,
+           'familiya':familiya,
+           't_yil':t_yil,
+           't_joyi':t_joyi,
+           'email':email,
+           'tel':tel}
+    return mijoz
+
+mijozlar=[]
+while True:
+    print("Mijozlar haqida malumot kiriting:")
+    ism = input("mijoz ismi>>>")
+    familiya = input("Mijoz familiyasi>>>")
+    t_yil = input("Tugilgan yili>>>")
+    t_joyi = input("tugilgan joyi>>>")
+    email = input("email kiriting>>>")
+    tel = input("Tel nomer>>>")
+    mijozlar.append(mijoz_info(ism, familiya, t_yil, t_joyi, email, tel ))
+    javob = input ("Yana malumot kiritasizmi?(yes/no)>>>")
+    if javob != 'yes':
+         break
+print("Mijozlar:")
+for mijoz in mijozlar:
+    print(f"{mijoz['ism'].title()} {mijoz['familiya'].title()} {mijoz['t_yil']}-yilda {mijoz['t_joyi']} da tugilgan, uning emaili=>{email}, va telefoni=>{tel}")
+
+def oraliq(min, max, qadam):
+    sonlar=[]
+    while min<max:
+        sonlar.append(min)
+        min+=qadam
+    return sonlar
+print(oraliq(0, 10, 2))
+
+
+print("Sotuvda bor avtomibillarni shakllantiramiz")
+avtolar=[]
+def avto_info(kompaniya, model, rangi):
+    avto={'kompaniya':kompaniya,
+          'model':model,
+          'rangi':rangi}
+    return avto
+while True:
+    print("\nQuyidagi malumotlarni kiritiamiz:")
+    kompaniya=input("KOmpaniya nomi>>>")
+    model = input("MOdel nomi:")
+    rangi = input("rangi:")
+    avtolar.append(avto_info(kompaniya, model, rangi))
+    javob=input("YAna malumot qoshasizmi?(ha/yoq)")
+    if javob !='ha':
+        break
+for avto in avtolar:
+    print(f"{avto['kompaniya'].title()} da {avto['model'].title()} ning {avto['rangi']} rangi mavjud")
+
+def user_info( ism, familiya, t_yil, t_joy, email='', yosh='', tel=''):
+    yosh= 2024-t_yil
+    user={'ism':ism,
+          'familiya':familiya,
+          't_yil':t_yil,
+          't_joy':t_joy,
+          'email':email,
+          'tel':tel,
+          'yosh':yosh}   
+    return user
+print("Quyida foydalanuvchilar royhatini yaratamiz:")
+users=[]
+while True:
+    print("Quyidagi malumotlarni kiritamiz:")
+    ism=input("Foydalanuvchi ismi:")
+    familiya=input("Foydalanuvchi familiyasi:")
+    t_yil=int(input("Tugilgan yili:"))
+    t_joy=input("Tugilgan joyi:")
+    email=input("emaili:")
+    tel=input("Telefon nomer:")
+    users.append(user_info(ism, familiya,t_yil,t_joy, email, tel))
+    javob=input("boldimi?(ova/yoq)")
+    if javob == 'ova':
+        break
+for user in users:
+    print(user)
+
+def max(a, b, c):
+    max=a
+    if b>max:
+        max=b
+    if c>max:
+        max=c
+    return max
+x=max(23,21, 43)
+print(x)
+
+
+def aylana_info(radius, pi=3.14):
+    """Aylana haqida malumot beradi"""
+    aylana={'radius':radius,
+            'diametr':2*radius,
+            'perimetr':2*pi*radius,
+            'yuza':pi*radius**2}
+    return aylana
+print("Aylana haqida malumot beramiz")
+radius=int(input("Aylana radiusini kiriting:"))
+print(aylana_info(radius))
+
+
+def tub_son(son1, son2):
+    """Tub sonlar royxati"""
+    sonlar=[]
+    for son in range(son1, son2):
+        tub=True
+        if son<2:
+            tub=False 
+        for i in range(2, int(son**0.5+1)):
+            if son%i==0:
+             tub=False
+        if tub:
+            sonlar.append(son)
+    return sonlar
+
+son1=int(input("birinchi sonni kiriting:"))
+son2=int(input("Ikkinchi sonni kiriting:"))
+print(tub_son(son1, son2))
+
+
+def bahola(ismlar):
+    baholar={}
+    while ismlar:
+        ism = ismlar.pop()
+        baho = input(f"Talaba {ism.title()} ning bahosini kiriting:")
+        baholar[ism]=baho
+    return baholar
+talabalar=['vali', 'ruslan', 'odamboy']
+baholar=bahola(talabalar)
+print(baholar)
+
+def matn(text):
+    k_matn=[]
+    while text:
+        soz=text.pop()
+        k_matn.append(soz.title())
+    return k_matn
+text=['ali', 'vali', 'bobur', 'aziz']
+natija=matn(text[:])
+print(natija)
+print(text)
+
+
+def bahola(ismlar):
+    baholar={}
+    for ism in ismlar:
+        baho=input(f"{ism.title()} ga bsho ber:")
+        baholar[ism]=baho
+    return baholar
+talabalar=['bobur', 'asad', 'javohir', 'ruslan']
+baholar=bahola(talabalar)
+print(baholar)
+print(talabalar)
+
+def summa(x, y, *sonlar):
+    return x+y+sum(sonlar)
+print(summa(21, 23, 6))
+
+def avto_info(kompaniya, model, **avto):
+    avto['kompaniya']=kompaniya
+    avto['model']=model
+    return avto
+avto1=avto_info("gm", "cobalt", yili=2021, narxi=20000)
+print(avto1)
+
+def summa(*sonlar):
+    result=1
+    for son in sonlar:
+        result*=son
+    return result
+print(summa(12, 2, 3, 21))
+
+def student_info(ism, familiya, **kwargs):
+    kwargs['ism']=ism
+    kwargs['familiya']=familiya
+    return kwargs
+student1=student_info('dilmurod', 'dilshodov', yonalishi='dasturiy injinering', kusr=3)
+print(student1)
+
+import avto_info_mod as aim
+avto2=aim.avto_info('kia', 'k5', 2024, 'avtomat', 30_000)
+avto1= aim.avto_info("gm", 'cobalt', 2023, 'mexanika', 20_000)
+avtolar=[avto1, avto2]
+for avto in avtolar:
+    aim.avto_print(avto)
+
+sonlar=list(range(10))
+def daraja2(x):
+    return x*x
+
+print(list(map(lambda x: x*x, sonlar)))
+
+
+
