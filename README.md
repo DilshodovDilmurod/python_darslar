@@ -1,3 +1,3 @@
 # python_darslar
 
-Bu yerda python doir kodlarni joylab boraman
+Bu yerda python tiliga doir kodlarni joylab boraman
