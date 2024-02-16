@@ -1392,4 +1392,69 @@ def play (x=10):
 print(play())    
 
 
+### Telegramm bot kril- lotin
+
+from transliterate import to_cyrillic, to_latin  
+import telebot
+TOKEN = '6849379463:AAE48uUWZ18nztc7TUCuvWtg4MWcglpFrKM'
+bot = telebot.TeleBot(TOKEN, parse_mode=None) 
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+    javob = "Assalomu aleykum, Xush kelibsiz!"
+    javob += "\nMatn Kiriting:"
+    bot.reply_to(message, javob)
+    
+@bot.message_handler(func=lambda message: True)
+def echo_all(message):
+    msg = message.text
+    if msg.isascii():
+        javob = to_cyrillic(msg)
+    else:
+        javob = to_latin(msg)
+    bot.reply_to(message, javob)
+    
+bot.infinity_polling()
+
+
+## Kalss lar
+
+class Talaba:
+    """Talaba nomli class yaratamiz"""
+    def __init__(self, ism, familiya,tyil):
+        """Talaba xususiyatlari"""
+        self.ism = ism
+        self.familiya = familiya
+        self.tyil = tyil
+    def tanishtir(self):
+        print(f"Ismim {self.ism} {self.familiya} {self.tyil} yilda tugilganman")
+    def get_fullname(self):
+        return f"{self.ism} {self.familiya}"
+    def get_surname(self):
+        return f"{self.familiya}"
+    def get_age(self, yil):
+        return yil - self.tyil
+    def get_email():
+        pass
+        
+talaba1 = Talaba("Nosirchumo", "Ismoilov", 2003)
+talaba2 = Talaba("Odamboy", "Olchilov", 2003)
+talaba2.tanishtir
+print(talaba1.get_age(2024))
+
+
+class User:
+    """User nomli class yaratamiz"""
+    def __init__(self, ism, familiya, email, tyil, tel):
+        self.ism = ism
+        self.familiya = familiya
+        self.email = email
+        self.tyil = tyil
+        self.tel = tel
+    def get_info(self):
+        return f"Ismi {self.ism} foydalanuvchi familiyasi {self.familiya}, tel: {self.tel} , email: {self.email}"
+Users = User("Anvar", "yusupov", "anvar2102gmail.com", 2000, +998991234567)
+print(Users.get_info())
+print(Users.ism)
+
+
 
