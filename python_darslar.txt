@@ -1458,3 +1458,73 @@ print(Users.ism)
 
 
 
+class Talaba:
+    """Talaba nomli class yaratamiz"""
+    def __init__(self, ism, familiya, tyil):
+        """Talaba xususiyatlari"""
+        self.ism = ism
+        self.familiya = familiya
+        self.tyil = tyil
+        self.bosqich = 1
+        
+    def get_info(self):
+        """Talaba haqida malumotlar"""
+        return f"{self.ism} {self.familiya} {self.bosqich}-bosqich talabasi"
+    
+    def set_bosqich(self, bosqich):
+        """Talabaning kursini yangilovchi metod"""
+        self.bosqich = bosqich
+        
+    def update_bosqich(self):
+        """Talabaning bosqichini 1 taga kopaytirish"""
+        self.bosqich += 1
+        
+class Fan:
+    """ Fan nomi"""
+    def __init__(self, nomi):
+        self.nomi = nomi
+        self.talabalar_soni = 0
+        self.talabalar = []
+        
+    def add_student(self, student):
+        self.talabalar.append(student)
+        self.talabalar_soni +=1
+    def get_students(self):
+        return [talaba.get_info()   for talaba in self.talabalar]
+
+matematika = Fan("Oliy matematika")
+talaba1 = Talaba("Ruslan", "Ahmedov", 2003)
+talaba2 = Talaba("Aleksandr", "Vaselivich", 1981)
+
+matematika.add_student(talaba1)
+matematika.add_student(talaba2)
+print(matematika.talabalar_soni)
+print(matematika.get_students())
+
+def see_methods(klass):
+    return [method for method in dir(klass) if method.startswith("__") is False]
+print(talaba1.__dict__.values())
+
+## 29-dars uchun amaliyot
+
+class Avto:
+    """Avtolar classi"""
+    def __init__(self, model, rang, korobka, narx, yil):
+        self.model = model 
+        self.rang = rang
+        self.korobka = korobka
+        self.narx = narx
+        self.yil = yil
+        self.kilometr = 0
+    def get_info(self):
+        return f"{self.korobka.title()} {self.rang} {self.model.title()} {self.yil}-yilda {self.narx}$ ga ishlab chiqarilgan"
+    def update_km(self, km):
+        self.kilometr = km
+class Avto_Salon:
+    def __init__(self, name, adres):
+        self.name = name
+        self.adres = adres
+        self.avtolar = []
+    def add_avto(self, avto):
+        self.avtolar.append(avto)
+   
