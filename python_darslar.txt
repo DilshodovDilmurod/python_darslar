@@ -1351,6 +1351,7 @@ def sontop(x=10):
     print(f"Tabriklaymiz, {taxminlar} ta taxmin bilan to'gri topdingiz")
     return taxminlar
 # print(sontop())
+
 def  son_top_pc(x=10):
     input(f"1 dan {x} gacha son o'ylang va istalgan tugmani bosing. Men topaman.")
     quyi = 1
