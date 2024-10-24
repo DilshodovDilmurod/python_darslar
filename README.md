@@ -1,4 +1,4 @@
 # python_darslar
 
-Bu yerda python tiliga doir kodlarni joylab boraman
+python haqida boshlang'ich tushunchalarni ko'rishingiz mumkin
 
